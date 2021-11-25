@@ -1,0 +1,43 @@
+$active-color: blue;
+$white-color: white;
+$semi-dark-color: #252525;
+$light-gray-color: #909090;
+
+
+
+#logoD {
+    color: $white-color;
+    font-weight: bold;
+    position: relative;
+    right: 25%;
+    bottom: 25%;
+}
+
+#logoBG {
+    position: relative;
+    color: $active-color;
+    right: -25%;
+    bottom: 25%;
+}
+
+.active > div {         /* ul li a:hover > div, */
+    filter: brightness(150%) !important;
+    background-color: $semi-dark-color !important;
+    border-left: 2px solid $light-gray-color;
+}
+
+.list-item  {
+    height: 80px !important;
+}
+
+.checked {
+    color: $active-color;
+}
+
+
+@media only screen and (min-width: 768px) {
+    // the stylings do not need to be overwritten for desktop
+    // all bootstrap class names has *-sm-* (where applies) to make the
+    // styling responsive. If the size of screen is below 768px, bootstrap
+    // will make components to stack vericaly
+}

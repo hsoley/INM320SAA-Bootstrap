@@ -3,11 +3,15 @@
   "version": "3.0.0",
   "description": "",
   "scripts": {
-    "start": "lite-server --baseDir=\"public\""
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "node-sass src/scss -wo public/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
   },
   "author": "Homa Soleymaniha",
   "license": "private",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^6.4.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^6.0.1"
   }
 }
