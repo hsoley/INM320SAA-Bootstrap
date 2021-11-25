@@ -1,0 +1,28 @@
+#logoD {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 25%;
+    bottom: 25%;
+}
+
+#logoBG {
+    position: relative;
+    color: blue;
+    right: -25%;
+    bottom: 25%;
+}
+
+.active > div {         /* ul li a:hover > div, */
+    filter: brightness(150%) !important;
+    background-color: #252525 !important;
+    border-left: 2px solid #909090;
+}
+
+.list-item  {
+    height: 80px !important;
+}
+
+.checked {
+    color: blue;
+}
