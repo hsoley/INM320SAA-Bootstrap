@@ -34,10 +34,19 @@ $light-gray-color: #909090;
     color: $active-color;
 }
 
+.topcard:hover {
+    border: 2px solid $active-color !important;
+    color: $active-color !important;
+
+    .card-subtitle {
+        color: $active-color !important;
+    }
+}
+
 
 @media only screen and (min-width: 768px) {
     // the stylings do not need to be overwritten for desktop
     // all bootstrap class names has *-sm-* (where applies) to make the
     // styling responsive. If the size of screen is below 768px, bootstrap
-    // will make components to stack vericaly
+    // will make components to stack vertically
 }

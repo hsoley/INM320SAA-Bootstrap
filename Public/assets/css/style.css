@@ -22,3 +22,9 @@
 
 .checked {
   color: blue; }
+
+.topcard:hover {
+  border: 2px solid blue !important;
+  color: blue !important; }
+  .topcard:hover .card-subtitle {
+    color: blue !important; }
